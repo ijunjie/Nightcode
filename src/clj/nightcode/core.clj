@@ -40,6 +40,7 @@
         scene (Scene. root 1200 600)
         project-tree (.lookup scene "#project_tree")
         content (.lookup scene "#content")]
+    (.setStyle root "-fx-font-family: 'serif'")
     (swap! *runtime-state assoc
       :stage stage
       :prefs (.node (Preferences/userRoot) "nightcode"))
